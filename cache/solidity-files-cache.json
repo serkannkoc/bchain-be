@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/serkan/Desktop/bchain-be/contracts/CourseRating.sol": {
+      "lastModificationDate": 1703686461341,
+      "contentHash": "7d22656fbad70a4b4408fd728a337062",
+      "sourceName": "contracts/CourseRating.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.3"
+      ],
+      "artifacts": [
+        "CourseRating"
+      ]
+    }
+  }
+}
