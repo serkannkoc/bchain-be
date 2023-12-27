@@ -1,0 +1,152 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Person_Information" (
+	"UserName"	TEXT,
+	"UserPassword"	TEXT,
+	"SmartWalletAddress"	TEXT,
+	"WalletValue"	REAL,
+	"Year_Id"	TEXT,
+	"Vote_Status"	TEXT
+);
+CREATE TABLE IF NOT EXISTS "Temp_Courses" (
+	"Course_Id"	INT,
+	"Course_Name"	TEXT,
+	"Course_Teacher"	TEXT,
+	"Vote_Result"	INT,
+	"Year_Id"	TEXT
+);
+INSERT INTO "Person_Information" VALUES ('Yusufmehmet@marun.edu.tr','zrb\L(uA','0x80JITldxVdUWzO5j1AJpNAwQ47btpgtIFBRinkq5',181.52,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Ömerfatma@marun.edu.tr','(K2E+l6s','0xULiGSjQresA01oP83YR9cvMnwg8iWGZbG0LnaalR',189.79,'Third_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Ayşeelif@marun.edu.tr',':l;dKcpB','0xsHEJDX2GcZk3QMjGYxiXezSbL9GkposIIZbNDmRC',372.21,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Elifesra@marun.edu.tr','5zQrg7H*','0xmGTii9cPHLHJsXVlkQV2zHiDV4RuLC5Y4b8HWTjy',629.8,'Second_Year','No');
+INSERT INTO "Person_Information" VALUES ('Fatmaömer@marun.edu.tr','1WKN)|;c','0xH0Z2RgJoRGj5AQayIeu9a6NohcwR8kOFJbIecV0T',284.71,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Esraömer@marun.edu.tr','oS(78iK,','0x6fg8W1lk4aF2uaVmHNObyTJMxScKexEILKBHFBAo',522.97,'First_Year','No');
+INSERT INTO "Person_Information" VALUES ('Mehmetayşe@marun.edu.tr',']6*2O-Lt','0xVMHSqIMKf7crJ5XP1D0Vef97Fy7ypJF9A8DLI9pu',713.41,'Third_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Elifzeynep@marun.edu.tr','2}c;4`z(','0xgQw3arAdj2YDm9gwtlYrOvpEDOF5utJszWcJNMvp',628.26,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Ahmetelif@marun.edu.tr','Sd5K*)![','0xK250OoZATF4gmMPOnZf1TYk0DzMCABZRWSsdooLd',430.47,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Zeynepfatma@marun.edu.tr','\s5P+`of','0xXRvniQp3rmecOWBFCaRZP0BWbpZqTmY3TGdjAJf1',263.85,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Elifayşe@marun.edu.tr','-(-gH25|','0x0B5i0Q5gBcGnKn8YJtNvYuqH34sDDqAleYC10h9L',712.83,'First_Year','No');
+INSERT INTO "Person_Information" VALUES ('Ahmetömer@marun.edu.tr','f78XV|Yn','0xYcfDPbzTyN6dpZOkjdlj0Dcs1vDTUdOvDEZDbYt4',886.85,'Third_Year','No');
+INSERT INTO "Person_Information" VALUES ('Emrezeynep@marun.edu.tr','i%NW6)Pr','0xJzKJzALTKcLzToe4NN17qxESPGOEa7WFzBWPcLax',150.69,'Third_Year','No');
+INSERT INTO "Person_Information" VALUES ('Mehmetyusuf@marun.edu.tr','|<AA]nv]','0xne9Na4fgqqTHbRAikynymLKqx8Ig47rvSSUFqwzl',835.76,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Ayşezeynep@marun.edu.tr','\b4#61uL','0xIFS3nDiWAyJ45hwqgn7mjT714MG3AdzhuqoJwj6Z',638.17,'Second_Year','No');
+INSERT INTO "Person_Information" VALUES ('Ayşeayşe@marun.edu.tr','m!*g_e<m','0xI0KbtZCehtbKdNPJrVuL6y0OYRdveXnwNCYp3IYt',210.17,'Fourth_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Ömerahmet@marun.edu.tr','QG8{]JE4','0xM6rBviCnk5xqVg2uln3FX5fht4yQkrrTAV6VV5QN',521.48,'Fourth_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Ahmetyusuf@marun.edu.tr','L$")/L1L','0xRNnfe8dCcNbqCeognS6zMTWEn9pRvzzL5vT1qxK1',752.15,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Eliffatma@marun.edu.tr','C07lM2K_','0xL5WGGzp1vGID4oRr4FtTIZFDD0lOcAZ78rGus7xI',69.13,'First_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Yusufayşe@marun.edu.tr','LuM@OUKX','0xeeVMYVQo1y1XOf4GWDLTXltQwL1hwNKpzxI66UfS',584.8,'Second_Year','No');
+INSERT INTO "Person_Information" VALUES ('Zeynepzeynep@marun.edu.tr','yyCU63}2','0xXzudxppuXClaZNz0an0T5MPf5p7pCHsHIvRTh1EX',991.93,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Esrazeynep@marun.edu.tr','wW4_8$U_','0xD8j3A8vuq6s81sSd8I6L4ozwvC5lYIQvsUA2UcXq',224.39,'Third_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Fatmamehmet@marun.edu.tr','JJ_)U9}J','0xbIucCHSaMc6NN8AB5r8XyGQZI5D9CSZLE6bLirvy',805.17,'Third_Year','No');
+INSERT INTO "Person_Information" VALUES ('Zeynepahmet@marun.edu.tr','7P?zSaI=','0xBd7kaD6NdA6utOlRrt21Wg0fPYcoklF1B1SBJoCR',123.22,'Third_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Ayşeesra@marun.edu.tr','>s7C2._$','0xM5HEDIs3aQCMfQeH07Ln8dLnAgXYxW7HmzMcnA0V',566.61,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Esraesra@marun.edu.tr','GpS=_y-B','0xFc7qboL7G9hIo14oGWiId08wGzXWjy4YfQhGl9b6',815.24,'Third_Year','No');
+INSERT INTO "Person_Information" VALUES ('Ömeresra@marun.edu.tr','a5!Z(\<R','0xofk2cMKeEmIcFciilnlT1jj2kl6ymPbVFwNNQ7wX',625.61,'Second_Year','No');
+INSERT INTO "Person_Information" VALUES ('Ahmetayşe@marun.edu.tr','XZ4pLsSZ','0xlbw53VONimmVBptWmZJhYozBhtacC5YQaWrPrZyP',598.76,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Zeynepyusuf@marun.edu.tr','!N+^K}#C','0xps3nJYqheoL0dkypQI9trJYPqWfsTaJDTc3AcDzS',653.4,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Elifmehmet@marun.edu.tr','VA@Q|Rs*','0xxvfJCUq0xZBBF8rKMMLVU1e0Z4DJdHjeI4G8DQvZ',78.73,'First_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Mehmetfatma@marun.edu.tr','PnF-Q[};','0xhk5RbG5PyYPDoR3kWyy5hNzYk6TwT7x5tHeKuSqK',506.06,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Fatmafatma@marun.edu.tr','W1MK`8(I','0xUnIA1rvP7pR2EtNIgxgTkRtM7jVyaDSYlRfmyUrk',986.22,'Second_Year','No');
+INSERT INTO "Person_Information" VALUES ('Zeynepmehmet@marun.edu.tr','@D>A~k"R','0x3zKRrFiKth57e5WSqLl99azyWl3qPaGmkWGrZRkn',49.96,'Fourth_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Yusufelif@marun.edu.tr','TQiFB_g(','0xqWS37VgKgruIv4tf2wqZ06GCfi1ZjBAafoz539uz',385.41,'First_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Fatmaayşe@marun.edu.tr','43PEVT2b','0xTFIXL1OdBOBnM2UceIMlc5w9cWxftLKGrUB5qUbH',192.93,'Fourth_Year','No');
+INSERT INTO "Person_Information" VALUES ('Emremehmet@marun.edu.tr','[VUpfPKz','0xsZIXOTiucw8WcHJHVCTJOxufPz0uI3sKJSM3lIxg',483.62,'Second_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Emreayşe@marun.edu.tr','eGG"*aW_','0xcJdsLEsI4ECWaMLjusNTAGzCYZQdJcvnSl0qNtHl',678.76,'Fourth_Year','Yes');
+INSERT INTO "Person_Information" VALUES ('Ahmetesra@marun.edu.tr','-\8QYS>*','0xlCgwAJ7Vd3M9zbTzypG1SPZlfqDdAB9paG4Ws5zn',57.25,'Third_Year','No');
+INSERT INTO "Person_Information" VALUES ('Emrefatma@marun.edu.tr','cf>w[;MD','0xLjI6n1RODaAdCiJScMCUrJ2OOr9WbsAnJgeCMPIm',856.39,'Fourth_Year','Yes');
+INSERT INTO "Temp_Courses" VALUES (1,'Türk Dili
+','Emine Şentürk',0.65,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (2,'Calculus 1','Taylan Şengül',0.55,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (3,'Physics 1','Mustafa Alevli',0.85,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (4,'Physics Lab 1','Hüseyin Yaltırak',0.55,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (5,'Calculus 2','Mustafa Şengül',0.55,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (6,'Physics 2','Mustafa Alevli',0.57,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (7,'Physics Lab 2','Hüseyin Yaltırak',0.33,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (8,'Linear Algebra for Computer Engineering','Ali Fuat Alkaya',0.5,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (9,'Türk Dili 2','Murat Tan',0.99,'First_Year');
+INSERT INTO "Temp_Courses" VALUES (10,'Discrete Computational Structures','Ali Fuat ALKAYA',0.34,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (11,'Data Structures','Borahan Tümer',0.16,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (12,'Engineering Economy','Arif Orgun Söyletmez',0.25,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (13,'Electric Circuits','Çiğdem Eroğlu Erdem',0.99,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (14,'Differential Equations','Vail Karakale',0.3,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (15,'Numerical Methods','Çiğdem Eroğlu Erdem',0.55,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (16,'Systems Programming','Fatma Corut Ergin',0.5,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (17,'Probability and Statistics','Müjdat Soytürk',0.27,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (18,'Analysis of Algorithms','Ömer Koçak',0.98,'Second_Year');
+INSERT INTO "Temp_Courses" VALUES (19,'Digital Logic Design','Betül Boz',0.77,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (20,'Database Systems','Betül Demiröz Boz',0.81,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (21,'Operating Systems','Ali Haydar Özer',0.71,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (22,'Object-Oriented','Murat Can Ganiz',0.89,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (23,'Modeling Software','Müjdat Soytürk',0.1,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (24,'Computer Organization','Haluk Rahmi Topçuoğlu',0.88,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (25,'Operations Research','Hüseyin Yaltırık',0.42,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (26,'Formal Languages','Ali Haydar Özer',0.99,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (27,'Signals and Systems','Mehmet Baran',0.13,'Third_Year');
+INSERT INTO "Temp_Courses" VALUES (28,'Computer Networks','Ömer Korgak',0.3,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (29,'İş Sağlığı ve Güvenliği I','Hande Yılmaz',0.02,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (30,'İş Sağlığı ve Güvenliği II','Hande Yılmaz',0.24,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (31,'Artificial Intelligence','Ali Haydar Özer',0.85,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (32,'Computer Graphics','Mehmet Baran',0.41,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (33,'Multimedia Systems','Çiğdem Eroğlu Erdem',0.16,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (34,'Mobile Device Programming','Ali Fuat Alkaya',0.54,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (35,'Microprocessors','Mehmet Baran',0.54,'Fourth_Year');
+INSERT INTO "Temp_Courses" VALUES (36,'Introduction to Blockchain Programming','Huseyin Ergun',0.29,'Fourth_Year');
+CREATE VIEW View_StudentCourses AS
+SELECT pi.UserName, c.Course_Name, c.Course_Teacher
+FROM Person_Information pi
+JOIN Temp_Courses c ON pi.Year_Id = c.Year_Id;
+CREATE VIEW View_AverageCourseVotes AS
+SELECT Course_Name, AVG(Vote_Result) AS AverageVote
+FROM Temp_Courses
+GROUP BY Course_Name;
+CREATE VIEW View_TeacherCourses AS
+SELECT Course_Teacher, Course_Name
+FROM Temp_Courses
+GROUP BY Course_Teacher, Course_Name;
+CREATE VIEW View_StudentWalletValues AS
+SELECT UserName, WalletValue
+FROM Person_Information
+ORDER BY WalletValue DESC;
+CREATE VIEW View_PopularCoursesByYear AS
+SELECT Year_Id, Course_Name, COUNT(Course_Id) AS CourseCount
+FROM Temp_Courses
+GROUP BY Year_Id, Course_Name
+ORDER BY CourseCount DESC;
+CREATE VIEW View_StudentVoteStatusCount AS
+SELECT Vote_Status, COUNT(UserName) AS StudentCount
+FROM Person_Information
+GROUP BY Vote_Status;
+CREATE VIEW View_TopVotingStudents AS
+SELECT UserName, Year_Id, Vote_Status
+FROM Person_Information
+WHERE Vote_Status = 'Yes'
+ORDER BY WalletValue DESC
+LIMIT 10;
+CREATE VIEW View_StudentsTopVotedCourse AS
+SELECT pi.UserName, MAX(c.Vote_Result) AS TopVote, c.Course_Name
+FROM Person_Information pi
+JOIN Temp_Courses c ON pi.Year_Id = c.Year_Id
+GROUP BY pi.UserName;
+CREATE VIEW View_NonVotingStudents AS
+SELECT UserName
+FROM Person_Information
+WHERE Vote_Status = 'No';
+CREATE VIEW View_CourseVotingStudentCount AS
+SELECT c.Course_Name, COUNT(pi.UserName) AS StudentCount
+FROM Temp_Courses c
+JOIN Person_Information pi ON c.Year_Id = pi.Year_Id AND pi.Vote_Status = 'Yes'
+GROUP BY c.Course_Name;
+CREATE VIEW View_AverageTeacherVotes AS
+SELECT Course_Teacher, AVG(Vote_Result) AS AverageVote
+FROM Temp_Courses
+GROUP BY Course_Teacher;
+CREATE VIEW View_MostPopularCourseByYear AS
+SELECT Year_Id, Course_Name, MAX(Vote_Result) AS MaxVote
+FROM Temp_Courses
+GROUP BY Year_Id
+ORDER BY MaxVote DESC;
+CREATE VIEW View_CourseVoteStudentCount AS
+SELECT c.Course_Name, pi.Vote_Status, COUNT(pi.UserName) AS StudentCount
+FROM Temp_Courses c
+JOIN Person_Information pi ON c.Year_Id = pi.Year_Id
+GROUP BY c.Course_Name, pi.Vote_Status;
+COMMIT;
